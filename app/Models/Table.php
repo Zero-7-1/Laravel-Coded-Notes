@@ -10,7 +10,7 @@ class Table extends Model
    // we need to define some properties here 
    // table name 
    protected $table = "table_name"; 
- /* A Important Note about Prural Model Follwed by Laravel 
+ /* A Important Note about Prural Model Follwed by Laravel - 
   By default, Laravel assumes that the table name corresponds to the 
   plural form of the model name. For example, if you have a model named User, 
   Laravel will assume the corresponding table name is users 
@@ -20,17 +20,17 @@ class Table extends Model
 
   If mistakenly used $table1 or any other property name, Laravel would default 
   to looking for a table named tables (the plural form of the model name Table), 
-  which does not exist in your database, resulting in the error you encountered
+  which does not exist in our database, resulting the error I already  encountered
   
 */
 
 
 
    // primary key 
-   protected $primarykey = "id";
+   protected $primaryKey = "id";
 
    // Fillable columns - mandotory fillings not set to null
-   protected $fillable = array("full_name");
+   protected $fillable = array("full_name", "age");
    
    
    
