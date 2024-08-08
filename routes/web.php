@@ -60,6 +60,9 @@ Route::get('/contact','AppController@function-name')->name('contact');
 /*
 Unique name for each route or assigning name to routes 
 also known as reverse routing Q. WHAT IS REVERSE ROUTING ? 
+
+The main advantage of reverse routing is we do not have to change the url 
+everytime in other files if route defination changes a bit. 
 */
 
 
