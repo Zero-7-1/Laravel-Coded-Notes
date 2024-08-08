@@ -1,28 +1,30 @@
 <?php    /*
-     CONCPETS COVERED TILL NOW: 
+     CONCPETS COVERED: 
      ---> ROUTING 
-     ---> MVC 
+     ---> MVC Basics 
 
 
 */
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AppController;
+use App\Http\Controllers\AppController; // this is needed to use controllers 
 
 /* Q. EXPLAIN WHAT IS ROUTING ? *** 
 Routing is the process of defining how our application should respond to different 
-HTTP requests. Routes are defined in the routes/web.php file for web routes and 
+HTTP requests. (Q. EXPLAIN WHAT ARE HTTP REQUESTS ? **)
+Routes are defined in the routes/web.php file for web routes and 
 routes/api.php for API routes. And we also have console.php
 
 Q. WHAT DOES ROUTES DO AND HOW TO DEFINE IT AND IN HOW MANY WAYS ? ***
 Routes maps URL pattern to a specific function or controller method.
 Or 
-simply returns a view or Instead of defining the logic in the route itself, 
-we could route to a controller.
+simply returns a view in a function or Instead of defining the logic in the route 
+itself, we could route to a controller.
 */ 
 
 
-/*
+/* A simple route 
+
 Route::get('/', function () {
     return view('welcome');
 }); 
@@ -64,7 +66,7 @@ also known as reverse routing Q. WHAT IS REVERSE ROUTING ?
 
 
 /* 
-Q. EXPALIN WHAT IS MVC ? 
+Q. EXPALIN WHAT IS MVC ? ***
 MVC - MODEL VIEW CONTROLLER - A design pattern or architecture 
 
 MODEL - database related, interacts with the database and retrieves, inserts, 
@@ -77,7 +79,7 @@ CONTROLLER - business logic, mediater between MODEL and VIEW, handles user reque
              retrieves data from the Model, and passes it to the View
              (php artisan make:controller nameofController)
 
-Q. IS CONTROLLER AND API SAME OR ACTS SIMILAR ? 
+Q. IS CONTROLLER AND API SAME OR ACTS SIMILAR ? **
 MVC's controller acts like an API but it isn't API. The major differnce is routing.
 Controller HTTP requests routed by framework, Controller returns an html view not
 just json or xml like API. Controller seems similar to API because  VIEW files 

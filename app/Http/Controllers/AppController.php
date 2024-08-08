@@ -1,6 +1,7 @@
 <?php
 /*
-A new controller can be created using 'php artisan make:controller AppController' command
+A new controller can be created using 'php artisan make:controller AppController' 
+command
 
 */
 
@@ -10,8 +11,9 @@ use App\Models\Table;  // to make models accessible for Eloquent ORM
 use Illuminate\Support\Facades\DB; //For Query Builder 
 
 /*
-Q. HOW DATA IS PASSED FROM CONTROLLER TO VIEW ? ** (we shall also see how data is brought
-                                                      from MODEL )
+Q. HOW DATA IS PASSED FROM CONTROLLER TO VIEW ? *** (we shall also see how data is 
+                                                    brought
+                                                    from MODEL )
 There are various ways,
 First one is using compact() function as an another argument with view and passing
 keys of variable name in compact(). To use these in views we can use blade syntax 
@@ -25,12 +27,12 @@ class AppController extends Controller
 {
     public function index() {
        
-      //  $name = 'John Doe';
-      //  $country = 'UK';
+       $name = 'John Doe';
+       $country = 'UK';
       
-      //  return "Happy Coding with Laravel"; // generally we would pass view 
+      // return "Happy Coding with Laravel"; // we can pass simple strings 
       
-      // return view("welcome", compact('name', 'country'));
+      //return view("welcome", compact('name', 'country'));
       /*
       return view("welcome", array(
          'name' => $name,
@@ -126,9 +128,12 @@ class AppController extends Controller
 
 
 
-      return "Database Operations";
+     // return "Database Operations";
 
     }
+
+
+    
 
     public function about() {
        return view("about");
