@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+
+
+In this public directory we keep all publicly accessible files like bootstarp 
+codes, css, js, images etc. generally in an asset folder 
