@@ -1,6 +1,6 @@
-<?php    /*
+<?php    /* Laravel is a MVC based framework of PHP 
      CONCPETS COVERED: 
-     ---> ROUTING 
+     ---> ROUTING with HTTP Request 
      ---> MVC Basics 
 
 
@@ -34,7 +34,7 @@ This is good enough if we want to render single page but for website with
 more functionalities we need to make controllers 
 */
 
-// Basic Route 
+// Basic Route without any parameters 
 // Route::get('/','AppController@index'); // this syntax did not worked 
 Route::get('/', [AppController::class, 'index']);   // this syntax worked 
 
@@ -62,7 +62,7 @@ Unique name for each route or assigning name to routes
 also known as reverse routing Q. WHAT IS REVERSE ROUTING ? 
 
 The main advantage of reverse routing is we do not have to change the url 
-everytime in other files if route defination changes a bit. 
+everytime in other files if route defination changes a bit. (see my project)
 */
 
 
@@ -70,10 +70,12 @@ everytime in other files if route defination changes a bit.
 
 /* 
 Q. EXPALIN WHAT IS MVC ? ***
-MVC - MODEL VIEW CONTROLLER - A design pattern or architecture 
+MVC - MODEL VIEW CONTROLLER - A design pattern or architecture where the codebase
+divided into 
 
 MODEL - database related, interacts with the database and retrieves, inserts, 
-        updates, or deletes data (php artisan make:model modelName)
+        updates, or deletes data (php artisan make:model modelName), Model
+        can be found in the app directory where Controller lies within Http folder
 
 VIEW - contents to be displayed on webpage or presentation layer, typically contains 
        html with blade syntax, stored in the resources/views directory
