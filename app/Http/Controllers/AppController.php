@@ -3,7 +3,7 @@
 A new controller can be created using 'php artisan make:controller AppController' 
 command
 
-*/
+*/   
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;

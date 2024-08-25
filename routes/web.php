@@ -28,7 +28,7 @@ itself, we could route to a controller.
 Route::get('/', function () {
     return view('welcome');
 }); 
-
+ 
 Simply returning welcome view from views folder or any normal message 
 This is good enough if we want to render single page but for website with 
 more functionalities we need to make controllers 
